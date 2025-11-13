@@ -13,14 +13,3 @@ How to run (Windows PowerShell):
    npm start
 
 3. Open browser: http://localhost:3000
-
-API endpoints:
-- POST /api/admin/partner { name, phone } -> add partner
-- POST /api/admin/delivery { date (YYYY-MM-DD), address, liters, partnerId?, customerId? }
-- GET /api/partner/:id/deliveries -> partner's deliveries for today
-- GET /api/customer/:id/plan -> customer's plan for today
-- POST /api/customer/:id/extra { extraLiters }
-
-Notes:
-- This is a minimal prototype using file-based persistence in `data.json`.
-- For production, switch to a real database and add authentication.
